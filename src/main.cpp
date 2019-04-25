@@ -35,7 +35,8 @@ void Computer::setup()
     {
         for (int x = 0; x < 20; x++)
         {
-            game.set_cell_state( {x, y}, Game::EMPTY);
+            Coordinate coord = {x, y};
+            game.set_cell_state(coord, Game::EMPTY);
         }
     }
     screen_data = game.get_render_data();
