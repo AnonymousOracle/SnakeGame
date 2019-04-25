@@ -2,6 +2,7 @@ class Timer
 {
     public:
     void start();
+    void stop();
     void set_timeout(double);
     bool is_timeout();
 

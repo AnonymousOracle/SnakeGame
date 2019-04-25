@@ -3,9 +3,9 @@
 #include <ctime>
 
 
-void Timer::set_timeout(double value)
+void Timer::set_timeout(double sec)
 {
-    timeout = value;
+    timeout = sec;
 }
 
 void Timer::start()

@@ -1,5 +1,6 @@
 #include "../headers/Computer.hpp"
 #include "../enums/Direction.hpp"
+#include "../structs/RenderData.hpp"
 
 #include <iostream>
 
@@ -36,6 +37,21 @@ char Computer::read_key()
     char key;
     std::cin >> key;
     return key;
+}
+
+void Computer::render_screen(RenderData r_data)
+{
+     int max_x = r_data.width,
+     max_y = r_data.height;
+     
+     for (int y = 0; y < max_y; y++)
+     {
+         for (int x = 0; x < max_x; x++)
+         {
+             std::cout << r_data.field[y][x];
+         }
+         std::cout << std::endl;
+     }
 }
 
 void Computer::update_queue(Queue* q, int key_code)

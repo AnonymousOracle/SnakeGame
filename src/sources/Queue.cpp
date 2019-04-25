@@ -9,7 +9,7 @@ Queue::Queue()
 
 void Queue::push(int value)
 {
-    if (is_push_valid)
+    if (is_push_valid())
         queue[++tail] = value;
 }
 
@@ -25,11 +25,12 @@ int Queue::pull()
 {
     if (is_pull_valid())
         return queue[head++];
+    return 404;
 }
 
 bool Queue::is_pull_valid()
 {
-    if (head < tail)
+    if (head <= tail)
         return true;
     else
         return false;
