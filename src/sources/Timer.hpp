@@ -1,4 +1,4 @@
-#include "../headers/Timer.hpp"
+#include "../headers/Timer.h"
 
 #include <ctime>
 

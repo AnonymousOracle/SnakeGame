@@ -1,6 +1,4 @@
-#ifndef TIMER
-#define TIMER
-
+#pragma once
 
 class Timer
 {
@@ -15,6 +13,3 @@ class Timer
     current_time;
     double timeout;
 };
-
-
-#endif

@@ -1,4 +1,4 @@
-#include "../headers/Vector.hpp"
+#include "../headers/Vector.h"
 
 Vector::Vector(int val)
 {

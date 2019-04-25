@@ -1,9 +1,7 @@
-#include "../sources/Queue.cpp"
-#include "../headers/Game.hpp"
+#include "Queue.h"
+#include "Game.h"
 
-#ifndef COMPUTER
-#define COMPUTER
-
+#pragma once
 
 class Computer
 {
@@ -15,6 +13,3 @@ class Computer
     char read_key();
     int get_key_code(char);
 };
-
-
-#endif

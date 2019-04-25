@@ -1,6 +1,4 @@
-#ifndef QUEUE
-#define QUEUE
-
+#pragma once
 
 class Queue
 {
@@ -19,6 +17,3 @@ class Queue
     
     int queue[10];
 };
-
-
-#endif

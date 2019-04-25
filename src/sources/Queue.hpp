@@ -1,4 +1,4 @@
-#include "../headers/Queue.hpp"
+#include "../headers/Queue.h"
 
 
 Queue::Queue()

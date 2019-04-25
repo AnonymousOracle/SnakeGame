@@ -1,4 +1,4 @@
-#include "../headers/Computer.hpp"
+#include "../headers/Computer.h"
 #include "../enums/Direction.hpp"
 
 #include <iostream>

@@ -1,11 +1,13 @@
 //Pre-compiled headers & objects
 
-#include "sources/Computer.cpp"
-#include "sources/Timer.cpp"
-#include "sources/Game.cpp"
+#include "sources/Computer.hpp"
+#include "sources/Timer.hpp"
+#include "sources/Game.hpp"
 
 #include <iostream>
 
 
 Computer main_computer;
 Timer main_timer;
+Game game;
+RenderData screen_data;

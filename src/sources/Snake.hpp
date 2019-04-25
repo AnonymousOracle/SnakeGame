@@ -1,4 +1,4 @@
-#include "../headers/Snake.hpp"
+#include "../headers/Snake.h"
 #include "../enums/Direction.hpp"
 
 Snake::Snake()

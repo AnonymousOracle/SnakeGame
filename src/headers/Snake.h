@@ -1,8 +1,6 @@
-#include "../sources/Vector.cpp"
+#include "Vector.hpp"
 
-#ifndef SNAKE
-#define SNAKE
-
+#pragma once
 
 class Snake
 {
@@ -15,6 +13,3 @@ class Snake
     Snake();
     void move(Vector, Vector);
 };
-
-
-#endif
