@@ -1,6 +1,5 @@
 #include "../headers/Computer.hpp"
 #include "../enums/Direction.hpp"
-#include "../structs/RenderData.hpp"
 
 #include <iostream>
 
