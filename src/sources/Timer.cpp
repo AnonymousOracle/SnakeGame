@@ -17,7 +17,10 @@ bool Timer::is_timeout()
 {
     current_time = time(NULL);
     if (current_time - start_time == timeout)
+    {
+        start_time += timeout;
         return true;
+    }
     else
         return false;
 }
