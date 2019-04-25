@@ -53,7 +53,7 @@ void Computer::render_screen(RenderData r_data)
      }
 }
 
-void Computer::update_queue(Queue* q, int key_code)
+void Computer::update_queue(Queue* queue, int key_code)
 {
-    q->push(key_code);
+    queue->push(key_code);
 }

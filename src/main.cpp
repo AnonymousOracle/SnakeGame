@@ -13,7 +13,7 @@ void Computer::loop()
         computer.update_queue(&queue, key_code);
         std::cout << queue.pull();
     }
-    //std::cout << "Timeout reached\n";
+    std::cout << "Timeout reached\n";
     main_computer.render_screen(screen_data);
 }
 

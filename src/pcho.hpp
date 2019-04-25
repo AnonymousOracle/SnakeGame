@@ -3,6 +3,7 @@
 #include "sources/Computer.hpp"
 #include "sources/Timer.hpp"
 #include "sources/Game.hpp"
+#include "sources/Queue.hpp"
 
 #include <iostream>
 

@@ -1,10 +1,9 @@
 #include "../headers/Queue.h"
 
 
-Queue::Queue()
+Queue::Queue() :
+    head(0), tail(-1)
 {
-    head = 0,
-    tail = -1;
 }
 
 void Queue::push(int value)
