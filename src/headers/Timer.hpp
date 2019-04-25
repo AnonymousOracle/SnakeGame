@@ -1,3 +1,7 @@
+#ifndef TIMER
+#define TIMER
+
+
 class Timer
 {
     public:
@@ -11,3 +15,6 @@ class Timer
     current_time;
     double timeout;
 };
+
+
+#endif

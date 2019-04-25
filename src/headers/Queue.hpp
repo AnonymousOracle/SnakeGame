@@ -1,3 +1,7 @@
+#ifndef QUEUE
+#define QUEUE
+
+
 class Queue
 {
     public:
@@ -15,3 +19,6 @@ class Queue
     
     int queue[10];
 };
+
+
+#endif

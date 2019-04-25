@@ -1,4 +1,8 @@
-#include "Vector.cpp"
+#include "../sources/Vector.cpp"
+
+#ifndef SNAKE
+#define SNAKE
+
 
 class Snake
 {
@@ -11,3 +15,6 @@ class Snake
     Snake();
     void move(Vector, Vector);
 };
+
+
+#endif
