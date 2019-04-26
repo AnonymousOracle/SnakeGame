@@ -1,8 +1,7 @@
 #include "../headers/Vector.h"
 
-Vector::Vector(int val)
+Vector::Vector(int val) : value(val)
 {
-    value = val;
 }
 
 int Vector::get_value()

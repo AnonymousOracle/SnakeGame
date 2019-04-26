@@ -29,6 +29,7 @@ int Computer::get_key_code(char key)
             break;
         }
     }
+    return RIGHT;
 }
 
 char Computer::read_key()

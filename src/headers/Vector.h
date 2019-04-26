@@ -1,6 +1,4 @@
-#ifndef VECTOR
-#define VECTOR
-
+#pragma once
 
 class Vector
 {
@@ -19,6 +17,3 @@ class Vector
     private:
     int value;
 };
-
-
-#endif

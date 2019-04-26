@@ -1,15 +1,19 @@
-#include "Vector.hpp"
+#include "../sources/Vector.hpp"
+#include "../structs/Coordinate.hpp"
 
 #pragma once
 
 class Snake
 {
-    int head_x,
-    head_y;
-    int length;
-    int direction;
-
     public:
-    Snake();
-    void move(Vector, Vector);
+    Snake(Coordinate);
+    void move();
+    void turn(int);
+
+    int* snake_x;
+    int* snake_y;
+
+    private:
+    int length;
+    int current_direction;
 };
