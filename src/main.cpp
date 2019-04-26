@@ -8,20 +8,20 @@ void Computer::loop()
     
     while (!main_timer.is_timeout())
     {
-        char direction = computer.read_key();
+        char direction = getch();
+        //char direction = computer.read_key();
         int key_code = computer.get_key_code(direction);
         computer.update_queue(&queue, key_code);
         std::cout << queue.pull();
     }
-    std::cout << "Timeout reached\n";
+    std::cout << "\nTimeout reached\n";
     main_computer.render_screen(screen_data);
 }
 
 int main()
 {
-    Game g;
     main_computer.setup();
-    while (g.is_game_over())
+    while (game.is_game_over())
         main_computer.loop();
 
     return 0;

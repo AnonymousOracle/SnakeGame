@@ -47,7 +47,7 @@ void Computer::render_screen(RenderData r_data)
      {
          for (int x = 0; x < max_x; x++)
          {
-             std::cout << r_data.field[y][x];
+             std::cout << " " << r_data.field[y][x];
          }
          std::cout << std::endl;
      }

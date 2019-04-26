@@ -6,6 +6,8 @@
 #include "sources/Queue.hpp"
 
 #include <iostream>
+#include <cstdlib>
+#include <conio.h>
 
 
 Computer main_computer;
