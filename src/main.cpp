@@ -11,11 +11,6 @@ void Computer::setup()
         }
     }
 
-    game.set_cell_state(snake_start_coordinates, Game::SNAKE);
-
-    Coordinate current_snake_coordinates = {snake_start_coordinates.x - 1, snake_start_coordinates.y};
-    game.set_cell_state(current_snake_coordinates, Game::SNAKE);
-
     screen_data = game.get_render_data();
 }
 
