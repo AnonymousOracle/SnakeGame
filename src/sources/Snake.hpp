@@ -20,44 +20,64 @@ void Snake::move()
         snake_x[l] = snake_x[l - 1];
         snake_y[l] = snake_y[l - 1];
     }
+    
+    switch(current_direction)
+    {
+        case RIGHT:
+        {
+            snake_x[0]++;
+            break;
+        }
+        case LEFT:
+        {
+            snake_x[0]--;
+            break;
+        }
+        case UP:
+        {
+            snake_y[0]--;
+            break;
+        }
+        case DOWN:
+        {
+            snake_y[0]++;
+            break;
+        }
+    }
 }
 
 void Snake::turn(int dir)
 {
     switch(dir)
     {
-        case RIGHT :
+        case RIGHT:
         {
             if (current_direction != LEFT)
             {
-                snake_x[0]++;
                 current_direction = RIGHT;
             }
             break;
         }
-        case LEFT :
+        case LEFT:
         {
             if (current_direction != RIGHT)
             {
-                snake_x[0]--;
                 current_direction = LEFT;
             }
             break;
         }
-        case UP :
+        case UP:
         {
             if (current_direction != DOWN)
             {
-                snake_y[0]--;
                 current_direction = UP;
             }
             break;
         }
-        case DOWN :
+        case DOWN:
         {
             if (current_direction != UP)
             {
-                snake_y[0]++;
                 current_direction = DOWN;
             }
             break;
