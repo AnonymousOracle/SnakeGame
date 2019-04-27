@@ -1,4 +1,3 @@
-#include "../sources/Vector.hpp"
 #include "../structs/Coordinate.hpp"
 
 #pragma once

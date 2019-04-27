@@ -7,8 +7,6 @@
 
 #include <iostream>
 #include <cstdlib>
-#include <ncurses.h>
-
 
 Computer main_computer;
 Timer main_timer;
